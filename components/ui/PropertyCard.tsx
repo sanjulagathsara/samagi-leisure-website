@@ -23,6 +23,7 @@ export function PropertyCard({ property, featured = false }: PropertyCardProps) 
             alt={property.heroAlt}
             fill
             sizes={featured ? "(min-width: 1024px) 66vw, 100vw" : "(min-width: 768px) 50vw, 100vw"}
+            loading="lazy"
             className="object-cover"
           />
           <div className="absolute inset-0 bg-linear-to-t from-forest/70 via-transparent to-transparent" />

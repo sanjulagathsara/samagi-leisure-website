@@ -56,6 +56,7 @@ export function GalleryExplorer({ images }: { images: GalleryImage[] }) {
                 alt={image.alt}
                 width={900}
                 height={700}
+                loading="lazy"
                 className="h-auto w-full object-cover"
               />
               <figcaption className="mt-2 text-xs tracking-wide text-stone">

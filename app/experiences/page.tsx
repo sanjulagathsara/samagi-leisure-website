@@ -49,6 +49,7 @@ export default function ExperiencesPage() {
                           alt={experience.imageAlt}
                           fill
                           sizes="(min-width: 1024px) 40vw, 100vw"
+                          loading="lazy"
                           className="object-cover"
                         />
                       </div>

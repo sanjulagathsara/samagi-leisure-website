@@ -14,6 +14,9 @@ export const site = {
   whatsapp: "+94 77 123 4568",
   whatsappHref: "https://wa.me/94771234568",
   address: "Horton Place, Cinnamon Gardens, Colombo 07, Sri Lanka",
+  heroImage:
+    "https://8po0uqw5ncrycedh.public.blob.vercel-storage.com/landing/landing-hero.webp",
+  heroImageAlt: "Samagi Leisure — tropical hospitality in Sri Lanka",
   sampleNotice:
     "Sample content for demonstration. Replace properties, rates, and copy in lib/data.ts and lib/site.ts before launch.",
   socials: [

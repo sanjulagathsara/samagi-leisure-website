@@ -49,8 +49,8 @@ export function HeroScene({ image, imageAlt }: HeroSceneProps) {
         src={image}
         alt={imageAlt}
         fill
-        priority
         sizes="100vw"
+        loading="eager"
         className="hero-image object-cover"
       />
       <div className="absolute inset-0 bg-linear-to-r from-forest/80 via-forest/45 to-forest/20" />

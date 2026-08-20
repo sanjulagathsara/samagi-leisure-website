@@ -9,7 +9,7 @@ import { SampleNotice } from "@/components/ui/SampleNotice";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { TestimonialCard } from "@/components/ui/TestimonialCard";
 import { experiences, properties, testimonials } from "@/lib/data";
-import { unsplash } from "@/lib/utils";
+import { site } from "@/lib/site";
 
 export default function HomePage() {
   const featured = properties[0];
@@ -17,10 +17,7 @@ export default function HomePage() {
 
   return (
     <>
-      <HeroScene
-        image={unsplash("photo-1571896349842-33c89424de2d", 2400)}
-        imageAlt="Tropical luxury pool framed by palms at a Sri Lankan resort"
-      />
+      <HeroScene image={site.heroImage} imageAlt={site.heroImageAlt} />
 
       <section className="bg-ivory py-20 sm:py-28">
         <Container>
@@ -96,6 +93,7 @@ export default function HomePage() {
                         alt={experience.imageAlt}
                         fill
                         sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                        loading="lazy"
                         className="object-cover"
                       />
                     </div>

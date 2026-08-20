@@ -37,6 +37,7 @@ export default function EventsPage() {
                     alt={venue.imageAlt}
                     fill
                     sizes="(min-width: 1024px) 33vw, 100vw"
+                    loading="lazy"
                     className="object-cover"
                   />
                 </div>

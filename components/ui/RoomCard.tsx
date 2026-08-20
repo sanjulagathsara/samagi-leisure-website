@@ -17,6 +17,7 @@ export function RoomCard({ room, propertySlug }: RoomCardProps) {
           alt={room.imageAlt}
           fill
           sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+          loading="lazy"
           className="object-cover"
         />
       </div>

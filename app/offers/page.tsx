@@ -40,6 +40,7 @@ export default function OffersPage() {
                     alt={offer.imageAlt}
                     fill
                     sizes="(min-width: 1024px) 40vw, 100vw"
+                    loading="lazy"
                     className="object-cover"
                   />
                 </div>

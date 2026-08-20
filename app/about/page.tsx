@@ -104,6 +104,7 @@ export default function AboutPage() {
                       alt={member.imageAlt}
                       fill
                       sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                      loading="lazy"
                       className="object-cover"
                     />
                   </div>
