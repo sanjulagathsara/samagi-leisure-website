@@ -37,7 +37,7 @@ export function Header() {
         overlay ? "bg-transparent" : "border-b border-line/70 bg-ivory/95 backdrop-blur-md",
       )}
     >
-      <div className="mx-auto flex h-[5.5rem] max-w-6xl items-center justify-between px-5 sm:px-8 lg:px-10">
+      <div className="mx-auto flex h-24 max-w-6xl items-center justify-between px-5 sm:px-8 lg:px-10">
         <div onClick={() => setOpen(false)}>
           <Logo light={light} />
         </div>

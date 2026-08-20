@@ -42,7 +42,7 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
 
   return (
     <>
-      <section className="bg-forest pt-[5.5rem]">
+      <section className="bg-forest pt-24">
         <PropertyGallery images={property.gallery} name={property.name} />
       </section>
       <section className="bg-ivory py-16 sm:py-20">
