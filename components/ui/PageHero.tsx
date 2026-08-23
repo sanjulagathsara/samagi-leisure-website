@@ -31,8 +31,8 @@ export function PageHero({
           src={image}
           alt={imageAlt}
           fill
-          priority
           sizes="100vw"
+          loading="lazy"
           className="object-cover"
         />
       ) : null}

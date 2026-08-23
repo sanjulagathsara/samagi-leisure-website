@@ -11,9 +11,9 @@ export function JsonLd() {
     telephone: site.phone,
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Horton Place, Cinnamon Gardens",
-      addressLocality: "Colombo",
-      postalCode: "00700",
+      streetAddress: "Harbour Road",
+      addressLocality: "Mirissa",
+      postalCode: "81740",
       addressCountry: "LK",
     },
     description: site.description,

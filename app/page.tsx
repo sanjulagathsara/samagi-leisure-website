@@ -9,7 +9,7 @@ import { SampleNotice } from "@/components/ui/SampleNotice";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { TestimonialCard } from "@/components/ui/TestimonialCard";
 import { experiences, properties, testimonials } from "@/lib/data";
-import { unsplash } from "@/lib/utils";
+import { site } from "@/lib/site";
 
 export default function HomePage() {
   const featured = properties[0];
@@ -17,10 +17,7 @@ export default function HomePage() {
 
   return (
     <>
-      <HeroScene
-        image={unsplash("photo-1571896349842-33c89424de2d", 2400)}
-        imageAlt="Tropical luxury pool framed by palms at a Sri Lankan resort"
-      />
+      <HeroScene image={site.heroImage} imageAlt={site.heroImageAlt} />
 
       <section className="bg-ivory py-20 sm:py-28">
         <Container>
@@ -35,15 +32,14 @@ export default function HomePage() {
             </div>
             <div className="lg:col-span-6 lg:col-start-7" data-reveal>
               <p className="text-lg leading-8 text-stone">
-                Not a chain, and not a single resort. Three houses — on the Bentota
-                estuary, above Ella’s tea, and in a quiet Colombo garden — made for
-                people who want to stay together: families, wedding parties, friends
-                returning to the island.
+                One house, on the Mirissa shore. Southern Riviera Resort is
+                Samagi Leisure’s first stay — made for people who want to gather:
+                families, wedding parties, friends returning to the island.
               </p>
               <p className="mt-5 text-base leading-7 text-stone">
                 The food is Sri Lankan without costume. The spa is Ayurveda, not a
-                trend list. The rooms keep the shutters open to river, mist, or
-                courtyard. That is the whole idea.
+                trend list. The rooms keep the shutters open to the monsoon breeze.
+                That is the whole idea.
               </p>
               <Button href="/about" variant="outline" className="mt-8">
                 Read our story
@@ -58,9 +54,9 @@ export default function HomePage() {
           <Reveal>
             <div data-reveal>
               <SectionHeading
-                eyebrow="02 / The collection"
-                title="Three houses, one welcome."
-                description="Beach, hill country, and city — each sited for its landscape, each kept small enough to feel personal. Sample properties for demonstration."
+                eyebrow="02 / The house"
+                title="Southern Riviera Resort Mirissa."
+                description="A beach house on Sri Lanka’s south coast — small enough to feel personal, open enough for a celebration. Room rates below are sample starting prices."
               />
             </div>
             <div className="mt-12 grid gap-8" data-reveal>
@@ -83,7 +79,7 @@ export default function HomePage() {
               <SectionHeading
                 eyebrow="03 / Slow hours"
                 title="Experiences that belong to the island."
-                description="Ayurveda, a boat at sunrise, hoppers in the kitchen, walks through tea. Booked with your stay, never as an afterthought."
+                description="Ayurveda, a whale boat at sunrise, hoppers in the kitchen, a walk along the bay. Booked with your stay, never as an afterthought."
               />
             </div>
             <ul className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -96,6 +92,7 @@ export default function HomePage() {
                         alt={experience.imageAlt}
                         fill
                         sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                        loading="lazy"
                         className="object-cover"
                       />
                     </div>
@@ -144,7 +141,7 @@ export default function HomePage() {
 
       <CTA
         title="Hold a table, a room, a date."
-        description="Tell us who is coming and which house feels right. Our reservations team — in a live site — would reply within a working day. This enquiry form stores nothing yet."
+        description="Tell us who is coming and when you would like to be in Mirissa. Our reservations team — in a live site — would reply within a working day. This enquiry form stores nothing yet."
         secondaryLabel="Plan a wedding"
         secondaryHref="/events"
       />

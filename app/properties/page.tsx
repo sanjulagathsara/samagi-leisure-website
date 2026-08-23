@@ -3,23 +3,23 @@ import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/ui/PageHero";
 import { PropertyExplorer } from "@/components/properties/PropertyExplorer";
 import { properties } from "@/lib/data";
-import { unsplash } from "@/lib/utils";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Hotels",
   description:
-    "Samagi Leisure hotels in Bentota, Ella, and Colombo — beach, hill country, and city stays in Sri Lanka.",
+    "Southern Riviera Resort Mirissa — Samagi Leisure’s beach hotel on Sri Lanka’s south coast.",
 };
 
 export default function PropertiesPage() {
   return (
     <>
       <PageHero
-        eyebrow="The collection"
-        title="Houses by sea, hill, and city."
-        description="Filter by coast, tea country, or Colombo. Every rate below is a sample starting price for demonstration."
-        image={unsplash("photo-1582719478250-c89cae4dc85b")}
-        imageAlt="Luxury resort pool at dusk"
+        eyebrow="The house"
+        title="Southern Riviera Resort Mirissa."
+        description="A beach resort on Sri Lanka’s south coast. Room types and rates below are sample figures for this marketing site."
+        image={site.heroImage}
+        imageAlt={site.heroImageAlt}
       />
       <section className="bg-ivory py-16 sm:py-24">
         <Container>

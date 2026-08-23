@@ -20,7 +20,7 @@ export default function TermsPage() {
       <section className="bg-ivory py-16 sm:py-24">
         <Container className="max-w-3xl space-y-6 text-sm leading-7 text-stone">
           <p>
-            This website is provided by {site.legalName} to introduce our houses
+            This website is provided by {site.legalName} to introduce our house
             and to collect stay and event enquiries. Content, photography credits,
             room types, and prices are sample data unless and until replaced with
             live information.

@@ -17,8 +17,8 @@ export function PropertyGallery({ images, name }: { images: GalleryImage[]; name
           src={current.src}
           alt={current.alt}
           fill
-          priority
           sizes="100vw"
+          loading="lazy"
           className="object-cover"
         />
       </div>
@@ -34,7 +34,7 @@ export function PropertyGallery({ images, name }: { images: GalleryImage[]; name
                 index === active ? "ring-2 ring-gold ring-offset-2" : "opacity-80 hover:opacity-100"
               }`}
             >
-              <Image src={image.src} alt="" fill sizes="160px" className="object-cover" />
+              <Image src={image.src} alt="" fill sizes="160px" loading="lazy" className="object-cover" />
             </button>
           </li>
         ))}

@@ -11,7 +11,7 @@ import { unsplash } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Events & Weddings",
   description:
-    "Garden, beach, and courtyard weddings at Samagi Leisure in Bentota, Ella, and Colombo.",
+    "Beach, lawn, and garden weddings at Southern Riviera Resort Mirissa.",
 };
 
 export default function EventsPage() {
@@ -20,7 +20,7 @@ export default function EventsPage() {
       <PageHero
         eyebrow="Celebrations"
         title="Weddings that feel like a gathering, not a production."
-        description="Lawns on the estuary, a ridge garden in Ella, a Colombo courtyard for the night before. Sample venues and packages — rewrite with real capacities before launch."
+        description="The ocean lawn at golden hour, a pool pavilion, a garden terrace for the night before. Sample venues and packages — rewrite with real capacities before launch."
         image={unsplash("photo-1519741497674-611481863552")}
         imageAlt="Outdoor wedding ceremony with floral aisle"
       />
@@ -37,6 +37,7 @@ export default function EventsPage() {
                     alt={venue.imageAlt}
                     fill
                     sizes="(min-width: 1024px) 33vw, 100vw"
+                    loading="lazy"
                     className="object-cover"
                   />
                 </div>

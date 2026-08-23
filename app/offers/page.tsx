@@ -11,7 +11,7 @@ import { unsplash } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Offers",
   description:
-    "Seasonal stays at Samagi Leisure — monsoon retreats, wedding moons, family tables, and weekday pauses in Colombo.",
+    "Seasonal stays at Southern Riviera Resort Mirissa — monsoon retreats, wedding moons, and family tables.",
 };
 
 export default function OffersPage() {
@@ -40,6 +40,7 @@ export default function OffersPage() {
                     alt={offer.imageAlt}
                     fill
                     sizes="(min-width: 1024px) 40vw, 100vw"
+                    loading="lazy"
                     className="object-cover"
                   />
                 </div>

@@ -11,7 +11,7 @@ import { unsplash } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Experiences",
   description:
-    "Spa, dining, tours, wellness, and activities at Samagi Leisure houses in Bentota, Ella, and Colombo.",
+    "Spa, dining, whale watching, wellness, and coastal walks at Southern Riviera Resort Mirissa.",
 };
 
 const categories = ["spa", "dining", "tours", "wellness", "activities"] as const;
@@ -22,7 +22,7 @@ export default function ExperiencesPage() {
       <PageHero
         eyebrow="Slow hours"
         title="Spa, table, walk, water."
-        description="Experiences are kept close to each house — Ayurveda beside the river, tea walks above Ella, hoppers on a Colombo rooftop."
+        description="Experiences stay close to the house — Ayurveda, a whale boat in season, hoppers in the kitchen, a walk along Mirissa bay."
         image={unsplash("photo-1544161515-4ab6ce6db874")}
         imageAlt="Spa treatment room prepared with warm light"
       />
@@ -49,6 +49,7 @@ export default function ExperiencesPage() {
                           alt={experience.imageAlt}
                           fill
                           sizes="(min-width: 1024px) 40vw, 100vw"
+                          loading="lazy"
                           className="object-cover"
                         />
                       </div>

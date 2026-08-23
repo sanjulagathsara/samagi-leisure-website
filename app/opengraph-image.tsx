@@ -40,7 +40,7 @@ export default async function OpenGraphImage() {
             Samagi Leisure
           </div>
           <div style={{ fontSize: 26, marginTop: 16, opacity: 0.78 }}>
-            Hotels · Weddings · Gatherings
+            Hotels · Weddings · Mirissa
           </div>
         </div>
       </div>

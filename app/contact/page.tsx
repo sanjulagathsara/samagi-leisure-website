@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact & book",
   description:
-    "Enquire about a Samagi Leisure stay in Bentota, Ella, or Colombo. Phone, email, WhatsApp, and a booking form.",
+    "Enquire about a stay at Southern Riviera Resort Mirissa. Phone, email, WhatsApp, and a booking form.",
 };
 
 type ContactPageProps = {
@@ -17,14 +17,14 @@ type ContactPageProps = {
 
 export default async function ContactPage({ searchParams }: ContactPageProps) {
   const { property } = await searchParams;
-  const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent("Cinnamon Gardens, Colombo")}&z=13&output=embed`;
+  const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent("Mirissa Beach, Sri Lanka")}&z=13&output=embed`;
 
   return (
     <>
       <PageHero
         eyebrow="Reservations"
         title="Write to the house."
-        description="Share dates, who is travelling, and which landscape you want. This form is a sample enquiry — no payment is taken and nothing is stored."
+        description="Share dates, who is travelling, and anything we should know. This form is a sample enquiry — no payment is taken and nothing is stored."
         compact
       />
       <section className="bg-ivory py-16 sm:py-24">
@@ -77,7 +77,7 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
           </div>
           <div className="mt-16">
             <iframe
-              title="Map of Samagi Leisure Colombo office"
+              title="Map of Southern Riviera Resort Mirissa"
               src={mapSrc}
               className="h-80 w-full border-0 grayscale"
               loading="lazy"
