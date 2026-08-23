@@ -5,7 +5,7 @@ export const site = {
   legalName: "Samagi Leisure (Pvt) Ltd",
   tagline: "Togetherness, at island pace.",
   description:
-    "Samagi Leisure is a Sri Lankan hospitality house with stays in Bentota, Ella, and Colombo — for gatherings, weddings, and unhurried days by sea, hill, and city.",
+    "Samagi Leisure is a Sri Lankan hospitality house. Our first stay is Southern Riviera Resort Mirissa — for gatherings, weddings, and unhurried days on the south coast.",
   url: "https://samagileisure.com",
   email: "stay@samagileisure.com",
   eventsEmail: "gather@samagileisure.com",
@@ -13,10 +13,10 @@ export const site = {
   phoneHref: "tel:+94112345670",
   whatsapp: "+94 77 123 4568",
   whatsappHref: "https://wa.me/94771234568",
-  address: "Horton Place, Cinnamon Gardens, Colombo 07, Sri Lanka",
+  address: "Harbour Road, Mirissa 81740, Sri Lanka",
   heroImage:
     "https://8po0uqw5ncrycedh.public.blob.vercel-storage.com/landing/landing-hero.webp",
-  heroImageAlt: "Samagi Leisure — tropical hospitality in Sri Lanka",
+  heroImageAlt: "Southern Riviera Resort Mirissa — Samagi Leisure on Sri Lanka’s south coast",
   sampleNotice:
     "Sample content for demonstration. Replace properties, rates, and copy in lib/data.ts and lib/site.ts before launch.",
   socials: [

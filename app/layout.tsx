@@ -23,17 +23,17 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Samagi Leisure | Sri Lankan Hotels, Weddings & Stays",
+    default: "Samagi Leisure | Southern Riviera Resort Mirissa",
     template: "%s | Samagi Leisure",
   },
   description: site.description,
   keywords: [
     "Samagi Leisure",
+    "Southern Riviera Resort Mirissa",
+    "Mirissa hotel",
     "Sri Lanka hotels",
-    "Bentota resort",
-    "Ella lodge",
-    "Colombo boutique hotel",
     "Sri Lanka weddings",
+    "south coast Sri Lanka",
     "Ayurveda spa",
   ],
   authors: [{ name: site.name }],
@@ -42,12 +42,12 @@ export const metadata: Metadata = {
     locale: "en_LK",
     url: site.url,
     siteName: site.name,
-    title: "Samagi Leisure | Sri Lankan Hotels, Weddings & Stays",
+    title: "Samagi Leisure | Southern Riviera Resort Mirissa",
     description: site.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Samagi Leisure | Sri Lankan Hotels, Weddings & Stays",
+    title: "Samagi Leisure | Southern Riviera Resort Mirissa",
     description: site.description,
   },
   robots: {

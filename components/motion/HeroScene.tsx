@@ -66,16 +66,16 @@ export function HeroScene({ image, imageAlt }: HeroSceneProps) {
           Togetherness, at island pace.
         </h1>
         <p className="mt-6 max-w-lg text-base leading-7 text-cream/80 sm:text-lg">
-          Three houses in Bentota, Ella, and Colombo. Stays, weddings, and
-          unhurried days shaped around Sri Lankan warmth — not a chain, not a
-          template, a gathering place.
+          Southern Riviera Resort Mirissa. Stays, weddings, and unhurried
+          days on the south coast — Sri Lankan warmth, not a chain, not a
+          template.
         </p>
         <div className="mt-9 flex flex-col gap-3 sm:flex-row">
           <Button href="/contact" variant="gold">
             Book a stay
           </Button>
           <Button href="/properties" variant="outline" className="text-cream">
-            Explore the houses
+            Discover the resort
           </Button>
         </div>
       </Container>

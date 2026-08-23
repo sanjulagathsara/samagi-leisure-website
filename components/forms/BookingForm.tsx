@@ -27,7 +27,9 @@ function isEmail(value: string) {
 }
 
 export function BookingForm({ defaultProperty = "", className }: BookingFormProps) {
-  const [values, setValues] = useState({ ...initial, property: defaultProperty });
+  const fallbackProperty =
+    defaultProperty || (properties.length === 1 ? properties[0].slug : "");
+  const [values, setValues] = useState({ ...initial, property: fallbackProperty });
   const [errors, setErrors] = useState<FieldErrors>({});
   const [submitted, setSubmitted] = useState(false);
 
@@ -53,7 +55,7 @@ export function BookingForm({ defaultProperty = "", className }: BookingFormProp
       next.checkOut = "Check-out must be after check-in.";
     }
     if (Number(values.guests) < 1) next.guests = "At least one guest is required.";
-    if (!values.property) next.property = "Please choose a house.";
+    if (!values.property) next.property = "Please choose a stay.";
     return next;
   }
 
@@ -126,7 +128,7 @@ export function BookingForm({ defaultProperty = "", className }: BookingFormProp
           value={values.property}
           onChange={(event) => update("property", event.target.value)}
         >
-          <option value="">Select a house</option>
+          <option value="">Select a stay</option>
           {properties.map((property) => (
             <option key={property.slug} value={property.slug}>
               {property.name} — {property.location}

@@ -17,14 +17,14 @@ export function Footer() {
           <div className="lg:col-span-4">
             <Logo light size="footer" />
             <p className="mt-6 max-w-sm text-sm leading-7 text-cream/70">
-              {site.tagline} Houses in Bentota, Ella, and Colombo for stays,
+              {site.tagline} Southern Riviera Resort Mirissa — for stays,
               weddings, and gatherings that feel like they belong to you.
             </p>
             <p className="mt-6 text-xs leading-5 text-cream/45">{site.sampleNotice}</p>
           </div>
           <div className="lg:col-span-2">
             <p className="text-[0.68rem] tracking-[0.28em] text-gold uppercase">
-              Houses
+              Stay
             </p>
             <ul className="mt-4 space-y-2">
               {properties.map((property) => (

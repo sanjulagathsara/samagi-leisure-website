@@ -21,7 +21,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="Our story"
         title="A house built around togetherness."
-        description="Samagi is a Sinhala word for unity. We took it as a brief: stay close to the island, keep the houses small, and make room for people to gather."
+        description="Samagi is a Sinhala word for unity. We took it as a brief: stay close to the island, keep the house personal, and make room for people to gather."
         image={unsplash("photo-1542314831-068cd1dbfeeb")}
         imageAlt="Warm timber hotel lobby at dusk"
       />
@@ -31,25 +31,25 @@ export default function AboutPage() {
             <div className="lg:col-span-5" data-reveal>
               <SectionHeading
                 eyebrow="Beginnings"
-                title="From a Bentota bungalow to three houses."
+                title="From a south-coast wish to one house in Mirissa."
               />
             </div>
             <div className="space-y-5 text-base leading-7 text-stone lg:col-span-6 lg:col-start-7" data-reveal>
               <p>
-                Samagi Leisure began with a family bungalow near the Bentota
-                River — a place where cousins arrived without notice, where
-                wedding weeks spilled onto the lawn, where the table was always
-                too small and somehow always enough.
+                Samagi Leisure began with a wish for a table that was always
+                too small and somehow always enough — cousins arriving without
+                notice, wedding weeks spilling onto the lawn, the south coast
+                at an unhurried pace.
               </p>
               <p>
                 The founder, Anjali Perera, wanted that feeling without turning
-                it into a theme. The first house opened on the estuary; Ella
-                followed, for guests who wanted mist and tea rather than surf;
-                Colombo is the townhouse for the in-between days. Sample history
-                for this demonstration — rewrite with the real founding story.
+                it into a theme. Southern Riviera Resort Mirissa is the first
+                house: a beach stay between coconut grove and sea, close to the
+                harbour and the bay. Further houses may follow; this is where
+                we begin.
               </p>
               <p>
-                We are not a large group. Each house has a host, a kitchen that
+                We are not a large group. The house has a host, a kitchen that
                 cooks from the nearest market, and a spa that follows Ayurveda
                 rather than a catalogue of trends. That is the scale we intend
                 to keep.
@@ -123,7 +123,7 @@ export default function AboutPage() {
       <CTA
         title="Come and sit with us."
         description="Whether you are planning a week, a wedding, or a single night between flights, write to the house that feels right."
-        secondaryLabel="See the houses"
+        secondaryLabel="See the house"
         secondaryHref="/properties"
       />
     </>
